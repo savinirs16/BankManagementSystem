@@ -1,0 +1,7 @@
+
+com.bms.bo.LoginBOTest
+com.bms.bo.StatementBOTest
+com.bms.bo.RegistrationBOTest
+com.bms.bo.LoanBOTest
+com.bms.bo.TransactionBOTest
+com.bms.bo.UpdateProfileBOTest

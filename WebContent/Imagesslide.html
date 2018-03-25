@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+<br>
+<br>
+
+<div
+   style="
+      top: ;
+      left: 2cm;
+      position: absolute;
+      z-index: 1;
+      visibility: show;">
+<!-- content will go here -->
+
+<img class="mySlides" src="add1.jpg" style="width:300px;height:400px;">
+<img class="mySlides" src="add2.jpg" style="width:300px;height:400px;">
+<img class="mySlides" src="fan-2016.jpg" style="width:300px;height:400px;">
+</div>
+
+
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+</script>
+
+</body>
+</html>
